@@ -43,6 +43,10 @@ The default values of the environment variables for Sentinel are as following
 Build the sentinel Docker image
 
 ```
+cd config
+```
+
+```
 docker-compose build
 ```
 
