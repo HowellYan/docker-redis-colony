@@ -21,7 +21,7 @@ The tempalte defines the topology of the Redis cluster
 
 ```
 master:
-  image: redis:3
+  image: redis:latest
 mymaster:
   build: mymaster
   ports:
@@ -72,7 +72,7 @@ docker-compose up -d
 Scale out the instance number of mymaster
 
 ```
-docker-compose scale mymaster=3
+docker-compose scale mymaster=1
 ```
 
 Scale out the instance number of slaves
