@@ -3,7 +3,7 @@
 
 Using Docker Compose to setup a redis cluster with sentinel.
 
-This project is inspired by the project of [https://github.com/th15817161961/docker-redis-colony][1]
+This project is inspired by the project of [https://github.com/th15817161961/docker-redis-colony] [1]
 
 ## Prerequisite
 
@@ -32,26 +32,11 @@ mymaster:
 
 There are following services in the cluster,
 
-* master: Redis master
-* slave:  Redis slave
-* sentinel: Redis sentinel
-
-
 The sentinels are configured with a "mymaster" instance with the following properties -
-
-```
-
-```
 
 The details could be found in sentinel/sentinel.conf
 
 The default values of the environment variables for Sentinel are as following
-
-* SENTINEL_QUORUM: 2
-* SENTINEL_DOWN_AFTER: 30000
-* SENTINEL_FAILOVER: 180000
-
-
 
 ## Play with it
 
@@ -67,8 +52,6 @@ Start the redis cluster
 docker-compose up -d
 ```
 
-```
-
 Scale out the instance number of mymaster
 
 ```
@@ -76,7 +59,6 @@ docker-compose scale mymaster=1
 ```
 
 Scale out the instance number of slaves
-
 
 
 ## License
