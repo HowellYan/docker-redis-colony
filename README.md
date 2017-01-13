@@ -1,7 +1,7 @@
-# redis-cluster 
-**Redis cluster with Docker Compose** 
+# docker-redis-colony 
+**Redis colony with Docker Compose** 
 
-Using Docker Compose to setup a redis cluster with sentinel.
+Using Docker Compose to setup a redis colony with sentinel.
 
 This project is inspired by the project of [https://github.com/th15817161961/docker-redis-colony] [1]
 
@@ -15,9 +15,9 @@ If you are using Windows, please execute the following command before "git clone
 git config --global core.autocrlf false
 ```
 
-## Docker Compose template of Redis cluster
+## Docker Compose template of Redis colony
 
-The tempalte defines the topology of the Redis cluster
+The tempalte defines the topology of the Redis colony
 
 ```
 master:
@@ -30,7 +30,7 @@ mymaster:
   command: /etc/redis/start.sh
 ```
 
-There are following services in the cluster,
+There are following services in the colony,
 
 The sentinels are configured with a "mymaster" instance with the following properties -
 
@@ -46,7 +46,7 @@ Build the sentinel Docker image
 docker-compose build
 ```
 
-Start the redis cluster
+Start the redis colony
 
 ```
 docker-compose up -d
