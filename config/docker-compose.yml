@@ -1,5 +1,5 @@
 master:
-  image: redis:3
+  image: redis:latest
 mymaster:
   build: mymaster
   ports:
