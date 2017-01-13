@@ -6,6 +6,3 @@ mymaster:
     - "6379:6379"
     - "26379:26379"
   command: /etc/redis/start.sh
-
-  
-

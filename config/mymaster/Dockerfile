@@ -1,6 +1,6 @@
 FROM redis
 
-MAINTAINER Li Yi <th15817161961@gmail.com>
+MAINTAINER Howell <th15817161961@gmail.com>
 
 EXPOSE 26379
 ADD sentinel.conf /etc/redis/sentinel.conf
