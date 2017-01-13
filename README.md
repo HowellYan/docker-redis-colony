@@ -26,7 +26,11 @@ mymaster:
   build: mymaster
   ports:
     - "6379:6379"
+    - "6380:6380"
+    - "6381:6381"
     - "26379:26379"
+    - "26380:26380"
+    - "26381:26381"
   command: /etc/redis/start.sh
 ```
 
